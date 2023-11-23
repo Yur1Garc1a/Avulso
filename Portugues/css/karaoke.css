@@ -1,0 +1,293 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+#main {
+    margin-left: 270px;
+    margin-top: 20px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+#karaoke-list .karaoke-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#karaoke-list .lyrics {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+#karaoke-list .lyrics p {
+    margin: 0;
+}
+
+#karaoke-list .lyrics p::before {
+    content: "♫ ";
+    color: #1db954;
+    margin-right: 5px;
+}
+
+#karaoke-list .lyrics p:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.separador {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 20%;
+}
+
+#search-input {
+    width: 70%; /* Ajustado para dar espaço suficiente para o botão */
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Adicionado espaçamento à direita */
+    margin-bottom: 10px;
+}
+
+#search-bar button {
+    width: 30%; /* Ajustado para dar espaço suficiente para o botão */
+    height: 35px;
+    max-width: 100px;
+    background-color: #8116E0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-bar button:hover {
+    background-color: #510b8f;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2f3336;
+}
+
+.icon {
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-header {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#navbar button {
+    height: 60px;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#navbar button > span {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding-right: 45px;
+    padding-left: 12px;
+    border-radius: 24px;
+    line-height: 1px;
+    transition: all 0.4s;
+}
+
+#navbar button:hover > span {
+    background-color: #8116E0;
+    color: white;
+}
+
+#navbar button span {
+    font-size: 16px;
+}
+
+#navbar nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-links {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#karaoke-list .karaoke-item iframe {
+    width: 40%;
+    height: 315px; /* Ajuste a altura conforme necessário */
+}
+
+
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 840px ) {
+    #main {
+        margin-left: 10px;
+    }
+
+    #navbar {
+        top: -10000px; /* Move a barra de navegação para cima, ocultando-a */
+
+    }
+
+    #search-bar {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 20%;
+    }
+    
+    #search-input {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px; /* Adicionado espaçamento à direita */
+        margin-bottom: 10px;
+    }
+    
+    #search-bar button {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        height: 35px;
+        max-width: 100px;
+        background-color: #8116E0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+}
+
+
+/* Estilos para telas médias e grandes */
+@media only screen and (max-width: 540px) {
+    #main {
+        margin-left: 10px;
+    }
+
+    #navbar {
+        top: -10000px; /* Move a barra de navegação para cima, ocultando-a */
+
+    }
+
+    #search-bar {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 20%;
+    }
+    
+    #search-input {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px; /* Adicionado espaçamento à direita */
+        margin-bottom: 10px;
+    }
+    
+    #search-bar button {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        height: 35px;
+        max-width: 100px;
+        background-color: #8116E0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #karaoke-list .karaoke-item iframe {
+        width: 100%;
+        min-width: 200px;
+        max-width: 400px;
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }   
+
+}
+
+/* next hub */
+@media only screen and (width: 1024px) {
+    
+    
+
+    #search-bar {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 20%;
+    }
+    
+    #search-input {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px; /* Adicionado espaçamento à direita */
+        margin-bottom: 10px;
+    }
+    
+    #search-bar button {
+        width: 200px; /* Ajustado para dar espaço suficiente para o botão */
+        height: 35px;
+        max-width: 100px;
+        background-color: #8116E0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #karaoke-list .karaoke-item iframe {
+        width: 100%;
+        min-width: 200px;
+        max-width: 400px;
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }   
+
+}
+

@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  #navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2f3336;
+  }
+  
+  .icon{
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .navbar-header{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  #navbar button{
+    height: 60px;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+  }
+  
+  #navbar button > span{
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding-right: 45px;
+    padding-left: 12px;
+    border-radius: 24px;
+    line-height: 1px;
+    transition: all 0.4s;
+  }
+  
+  #navbar button:hover > span{
+    background-color: #8116E0;
+    color: white;
+  }
+  
+  #navbar button span{
+    font-size: 16px;
+  }
+  
+  #navbar nav{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #main{
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+  }
+  
+  #navbar button span.animate {
+    animation: bounce 0.5s ease;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+  }
+  
+  #navbar button.bounce > span {
+    animation: bounce 0.9s;
+  }
+  
+  
+  #main {
+    text-align: center; 
+  }
+  
+  .title {
+    font-size: 3em;
+    margin-bottom: 20px; 
+  }
+  
+  
+  
+  
+  #musicas-do-momento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .musica {
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .musica img {
+    width: 50%;
+    height: auto;
+    border-radius: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .play-button,
+  .stop-button,
+  .volume-control {
+    margin: 5px;
+    background-color: #8116E0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  #lista-de-musicas .linha-musicas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #lista-de-musicas .musica {
+    width: calc(33.33% - 20px); /* Ajuste a largura conforme necessário */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #lista-de-musicas .info-container {
+    margin-top: 10px;
+    margin-right: 170px;;
+  }
+  
+  #lista-de-musicas .controls-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os botões */
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  #lista-de-musicas .play-button,
+  #lista-de-musicas .stop-button {
+    margin-right: 10px; /* Espaço entre os botões Play e Stop */
+  }
+  
+  #lista-de-musicas .volume-control {
+    margin-top: 10px;
+  }
+  
+  #lista-de-musicas .info {
+    margin: 0;
+  }
+  
+  #lista-de-musicas .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  #lista-de-musicas .resenha-button {
+    margin-left: 10px; 
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8116E0; /* Cor roxa */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  #lista-de-musicas .resenha-button:hover {
+    background-color: #4A0C7F; /* Cor roxa mais escura ao passar o pau */
+  }
+  
+  .separador {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+  }

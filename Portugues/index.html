@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>Home</title>
+</head>
+<body>
+
+
+<div id="navbar">
+    <header class="navbar-header"><img class="icon" src="imagens/Usuario.png"></header>
+    <nav>
+        <button>
+            <span>
+            
+                <a class="nav-links"  href="index.html">Home</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="lista de música.html" >Lista de Música</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="karaoke.html" >Karaoke</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="resenha.html" >Resenha</a>
+            </span>
+        </button>
+    </nav>
+</div>
+
+<div id="main">
+    <h1 class="title">TechMusic</h1>
+
+    <!-- Músicas do Momento -->
+    <section id="musicas-do-momento">
+        <h2>Músicas do Momento</h2>
+
+        <div class="musica">
+            <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+            <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+            <button class="stop-button" onclick="stopAudio()">Stop</button>
+            <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+        </div>
+
+        <!-- Vá adicionando mais musica ai caique umas 5 ta suave-->
+
+    </section>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

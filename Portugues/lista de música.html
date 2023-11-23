@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lista de música.css">
+    
+    <title>Lista de Músicas</title>
+</head>
+<body>
+
+<!-- Nav Bar -->
+<div id="navbar">
+    <header class="navbar-header"><img class="icon" src="imagens/Usuario.png"></header>
+    <nav>
+        <button>
+            <span>
+            
+                <a class="nav-links"  href="index.html">Home</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="lista de música.html" >Lista de Música</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="karaoke.html" >Karaoke</a>
+            </span>
+        </button>
+        <button>
+            <span>
+                <a class="nav-links" href="resenha.html" >Resenha</a>
+            </span>
+        </button>
+    </nav>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+    <h1 class="title">Lista de Músicas</h1>
+
+    <!-- Lista de Músicas -->
+    <section id="lista-de-musicas">
+        <h2>Selecione uma música para ouvir</h2>
+
+        <!-- Adicione as músicas conforme necessário -->
+        <div class="linha-musicas">
+
+            <!-- Primeira Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Segunda Música -->
+            <div class="musica">
+                <img src="imagens/MAGIC! - Rude.png" alt="MAGIC! - Rude">
+                
+                <div class="info-container">
+                    <!-- Informações da Música -->
+                    <p class="info">Música: <span class="label">Magic</span></p>
+                    <p class="info">Artista: <span class="label">MAGIC!</span></p>
+                    <p class="info">Data: <span class="label">20/11/2023</span></p>
+                </div>
+
+                <div class="controls-container">
+                    <!-- Controles da Música -->
+                    <button class="play-button" onclick="playAudio('musicas/magic.mp3')">Play</button>
+                    <button class="stop-button" onclick="stopAudio()">Stop</button>
+                    <input type="range" class="volume-control" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)">
+                </div>
+
+                <!-- Botão Resenha -->
+                <a href="resenha.html" class="resenha-button">Resenha</a>
+            </div>
+
+            <!-- Adicione mais músicas conforme necessário -->
+
+        </div>
+    </section>
+</div>
+
+<script src="js/lista de música.js"></script>
+</body>
+</html>
